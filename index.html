@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Тестовое задание</title>
+</head>
+<style>
+    input {
+        border: 1px solid gray;
+        margin: 5px;
+        padding: 5px;
+    }
+    input.error {
+        border: 1px solid red;
+    }
+</style>
+<body>
+<form id="myForm" action="success.json">
+    <div>
+        <label for="fio">ФИО:</label>
+        <input type="text" id="fio" name="fio" placeholder="ФИО" required>
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+    </div>
+    <div>
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+    </div>
+    <button id="submitButton">Отправить</button>
+    <div id="resultContainer"></div>
+</form>
+<script src="index.js"></script>
+</body>
+</html>
